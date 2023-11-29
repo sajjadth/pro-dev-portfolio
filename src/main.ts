@@ -1,5 +1,6 @@
 import "./styles/main.sass";
 import App from "./App.svelte";
+import 'bootstrap/dist/css/bootstrap.css';
 
 const targetElement = document.getElementById("app");
 
