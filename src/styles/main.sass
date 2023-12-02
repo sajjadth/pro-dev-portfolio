@@ -30,6 +30,10 @@ body
   margin: 0 auto
   text-align: center
   z-index: 100
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-between
   &::before
     content: ""
     opacity: 0.8
@@ -55,6 +59,28 @@ body
     background-image: radial-gradient(at 40% 40%, #6495ED 0px, transparent 50%), radial-gradient(at 90% 10%, #FF4500 0px, transparent 50%), radial-gradient(at 50% 95%, #00CED1 0px, transparent 50%), radial-gradient(at 20% 30%, #2E8B57 0px, transparent 50%), radial-gradient(at 90% 90%, #4682B4 0px, transparent 50%), radial-gradient(at 33% 50%, #FF8C00 0px, transparent 50%), radial-gradient(at 79% 53%, #CD5C5C 0px, transparent 50%)
 
     opacity: 0.1
+  header
+    padding: 16px
+    margin-block: 32px
+    nav
+      #navbar-icon
+        width: 30px
+        height: 30px
+        background: url("src/assets/images/stacks.svg") center no-repeat
+        background-size: cover
+        transition: all 250ms ease
+        fill: green !important
+        &:hover
+          transform: scale(1.1)
+          cursor: pointer
+          transition: all 250ms ease
+        &:active
+          transform: scale(0.9)
+      ul
+        li
+          list-style-type: none
+          padding: 8px 16px
+
   main
     article
       text-align: justify
