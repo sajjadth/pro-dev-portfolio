@@ -23,6 +23,11 @@ body
 
   .link
     overflow: hidden
+  #active-link
+    &:before
+      transform: scaleX(0.3)
+    &:after
+      transform: translateX(0)
   a
     &:not(.not-link)
       text-decoration: none
