@@ -18,5 +18,8 @@
       problem-solving. Let's connect and embark on a journey to craft exceptional digital
       experiences together.
     </p>
+    <a href="#/about" id="about-me-link">
+      More About me <div id="about-me-link-icon"></div>
+    </a>
   </article>
 </main>
