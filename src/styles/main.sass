@@ -72,6 +72,7 @@ body
   flex-direction: column
   align-items: center
   justify-content: space-between
+  overflow: hidden
   @media (max-width: $breakpoint-lg)
     height: auto
   &::before
@@ -154,3 +155,13 @@ body
           height: 20px
           background: url("src/assets/images/chevron-right.svg") no-repeat center
           background-size: contain
+  .subtleBackgroundTitle
+    position: absolute
+    bottom: 0
+    left: -10vh
+    font-size: 40vh !important
+    font-family: Abril-Fatface !important
+    z-index: -1
+    opacity: 0.025
+    margin: 0
+    line-height: 40vh
