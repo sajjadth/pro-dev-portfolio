@@ -20,3 +20,56 @@
   >
   </a>
 </footer>
+
+<style lang="scss" scoped>
+  @use "src/styles/_variables.sass";
+  @use "src/styles/_colors.sass";
+
+  footer {
+    padding: 32px 0 !important;
+    width: 725px !important;
+    @media (max-width: variables.$breakpoint-lg) {
+      width: 100%;
+    }
+    @media (max-width: variables.$breakpoint-md) {
+      width: 100%;
+    }
+    @media (max-width: variables.$breakpoint-sm) {
+      width: 100%;
+      padding: 8px;
+    }
+    .social-link {
+      width: 20px;
+      height: 20px;
+      transition: all 250ms ease;
+      margin-right: 16px;
+      background-size: contain !important;
+      background-repeat: no-repeat !important;
+      background-position: center !important;
+      &:hover {
+        transition: all 250ms ease;
+        transform: scale(1.1);
+      }
+      &:active {
+        transition: all 250ms ease;
+        transform: scale(0.9);
+      }
+    }
+    #github {
+      background: url("src/assets/images/github.svg");
+    }
+    #linkedin {
+      background: url("src/assets/images/linkedin.svg");
+    }
+    #twitter {
+      background: url("src/assets/images/twitter.svg");
+    }
+    #twitch {
+      background: url("src/assets/images/twitch.svg");
+    }
+    #bmc {
+      background: url("src/assets/images/bmc.svg");
+      background-size: auto 100%;
+    }
+  }
+</style>

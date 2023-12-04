@@ -98,106 +98,15 @@ body
     transform: translate(-50%, -50%)
     background-image: radial-gradient(at 40% 40%, #6495ED 0px, transparent 50%), radial-gradient(at 90% 10%, #FF4500 0px, transparent 50%), radial-gradient(at 50% 95%, #00CED1 0px, transparent 50%), radial-gradient(at 20% 30%, #2E8B57 0px, transparent 50%), radial-gradient(at 90% 90%, #4682B4 0px, transparent 50%), radial-gradient(at 33% 50%, #FF8C00 0px, transparent 50%), radial-gradient(at 79% 53%, #CD5C5C 0px, transparent 50%)
     opacity: 0.1
-  header
-    padding: 16px
-    margin-block: 32px
-    nav
-      #navbar-icon
-        width: 30px
-        height: 30px
-        background: url("src/assets/images/stacks.svg") center no-repeat
-        background-size: cover
-        transition: all 250ms ease
-        fill: green !important
-        &:hover
-          transform: scale(1.1)
-          cursor: pointer
-          transition: all 250ms ease
-        &:active
-          transform: scale(0.9)
-      ul
-        li
-          list-style-type: none
-          padding: 8px 16px
 
-  main
-    article
-      text-align: justify
-      width: 725px
-      @media (max-width: $breakpoint-lg)
-        width: 100%
-      @media (max-width:$breakpoint-md)
-        width: 100%
-      @media (max-width: $breakpoint-sm)
-        width: 100%
-        padding: 8px
-      #title-name
-        margin-bottom: 32px
-        font-size: 4rem
-        word-break: normal
-        text-align: left
-        @media (max-width:$breakpoint-md)
-          font-size: 3rem
-        &-colored
-          font-family: Poppins-SemiBold
-          color: $text-color
-      #about-me-link
-        display: flex
-        flex-direction: row
-        width: fit-content !important
-        align-items: center
-        &:hover #about-me-link-icon
-          transition: all 250ms ease
-          transform: translateX(4px)
-        &-icon
-          transition: all 250ms ease
-          width: 20px
-          height: 20px
-          background: url("src/assets/images/chevron-right.svg") no-repeat center
-          background-size: contain
   .subtleBackgroundTitle
     position: absolute
     bottom: 0
-    left: -10vh
-    font-size: 40vh !important
+    left: -8vh
+    font-size: 30vh !important
     font-family: Abril-Fatface !important
     z-index: -1
     opacity: 0.025
     margin: 0
-    line-height: 40vh
+    line-height: 30vh
 
-footer
-  padding: 32px 0 !important
-  width: 725px !important
-  @media (max-width: $breakpoint-lg)
-    width: 100%
-  @media (max-width:$breakpoint-md)
-    width: 100%
-  @media (max-width: $breakpoint-sm)
-    width: 100%
-    padding: 8px
-  .social-link
-    width: 20px
-    height: 20px
-    transition: all 250ms ease
-    margin-right: 16px
-    background-size: contain !important
-    background-repeat: no-repeat !important
-    background-position: center !important
-    &:hover
-      transition: all 250ms ease
-      transform: scale(1.1)
-    &:active
-      transition: all 250ms ease
-      transform: scale(0.9)
-  #github
-    background: url("src/assets/images/github.svg")
-  #linkedin
-    background: url("src/assets/images/linkedin.svg")
-  #twitter
-    background: url("src/assets/images/twitter.svg")
-  #twitch
-    background: url("src/assets/images/twitch.svg")
-  #bmc
-    background: url("src/assets/images/bmc.svg")
-    background-size: auto 100%

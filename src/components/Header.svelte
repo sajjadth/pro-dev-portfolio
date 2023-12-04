@@ -23,3 +23,34 @@
     </ul>
   </nav>
 </header>
+
+<style lang="scss" scoped>
+  header {
+    padding: 16px;
+    margin-block: 32px;
+    nav {
+      #navbar-icon {
+        width: 30px;
+        height: 30px;
+        background: url("src/assets/images/stacks.svg") center no-repeat;
+        background-size: cover;
+        transition: all 250ms ease;
+        fill: green !important;
+        &:hover {
+          transform: scale(1.1);
+          cursor: pointer;
+          transition: all 250ms ease;
+        }
+        &:active {
+          transform: scale(0.9);
+        }
+      }
+      ul {
+        li {
+          list-style-type: none;
+          padding: 8px 16px;
+        }
+      }
+    }
+  }
+</style>

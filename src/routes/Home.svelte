@@ -24,3 +24,55 @@
   </article>
   <h1 class="subtleBackgroundTitle">CW.</h1>
 </main>
+
+<style lang="scss" scoped>
+  @use "src/styles/_variables.sass";
+  @use "src/styles/_colors.sass";
+
+  main {
+    article {
+      text-align: justify;
+      width: 725px;
+      @media (max-width: variables.$breakpoint-lg) {
+        width: 100%;
+      }
+      @media (max-width: variables.$breakpoint-md) {
+        width: 100%;
+      }
+      @media (max-width: variables.$breakpoint-sm) {
+        width: 100%;
+        padding: 8px;
+      }
+      #title-name {
+        margin-bottom: 32px;
+        font-size: 4rem;
+        word-break: normal;
+        text-align: left;
+        @media (max-width: variables.$breakpoint-md) {
+          font-size: 3rem;
+        }
+        &-colored {
+          font-family: Poppins-SemiBold;
+          color: colors.$text-color;
+        }
+      }
+      #about-me-link {
+        display: flex;
+        flex-direction: row;
+        width: fit-content !important;
+        align-items: center;
+        &:hover #about-me-link-icon {
+          transition: all 250ms ease;
+          transform: translateX(4px);
+        }
+        &-icon {
+          transition: all 250ms ease;
+          width: 20px;
+          height: 20px;
+          background: url("src/assets/images/chevron-right.svg") no-repeat center;
+          background-size: contain;
+        }
+      }
+    }
+  }
+</style>
