@@ -16,13 +16,13 @@
   box-sizing: border-box
   strong
     font-family: Poppins-SemiBold, sans-serif
-  &::-webkit-scrollbar 
-    width: 16px
-    background: #000
-  &::-webkit-scrollbar-thumb
-    border: 5px solid #000
-    border-radius: 36px
-    background: $dark-gray  
+  // &::-webkit-scrollbar 
+  //   width: 16px
+  //   background: #000
+  // &::-webkit-scrollbar-thumb
+  //   border: 5px solid #000
+  //   border-radius: 36px
+  //   background: $dark-gray  
 
 body
   color: #fffffc !important
@@ -31,7 +31,7 @@ body
   min-height: 100vh
 
   .link
-    overflow: hidden
+    overflow: hidden !important
   #active-link
     &:before
       transform: scaleX(0.3)
@@ -84,6 +84,8 @@ body
   overflow: auto
   @media (max-width: $breakpoint-lg)
     height: auto
+  @media (max-width: $breakpoint-sm)
+    padding: 0 0 16px 0 !important
   &::before
     content: ""
     background-image: linear-gradient($dark-gray 1px, transparent 1px), linear-gradient(to right, $dark-gray 1px, transparent 1px)
