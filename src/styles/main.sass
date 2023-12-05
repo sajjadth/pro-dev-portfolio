@@ -14,6 +14,8 @@
 *
   font-family: Poppins-Regular, sans-serif
   box-sizing: border-box
+  strong
+    font-family: Poppins-SemiBold, sans-serif
 
 body
   color: #fffffc !important
@@ -72,7 +74,7 @@ body
   flex-direction: column
   align-items: center
   justify-content: space-between
-  overflow: hidden
+  overflow: auto
   @media (max-width: $breakpoint-lg)
     height: auto
   &::before
@@ -100,13 +102,12 @@ body
     opacity: 0.1
 
   .subtleBackgroundTitle
-    position: absolute
-    bottom: 0
-    left: -8vh
+    position: fixed
+    bottom: 8vh
+    left: -4vw
     font-size: 30vh !important
     font-family: Abril-Fatface !important
     z-index: -1
     opacity: 0.025
     margin: 0
     line-height: 30vh
-
