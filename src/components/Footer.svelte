@@ -26,17 +26,13 @@
   @use "src/styles/_colors.sass";
 
   footer {
-    padding: 32px 0 !important;
+    padding-block: 32px !important;
     width: 725px !important;
+    @media (min-width: variables.$breakpoint-sm) {
+      padding-inline: 0;
+    }
     @media (max-width: variables.$breakpoint-lg) {
-      width: 100%;
-    }
-    @media (max-width: variables.$breakpoint-md) {
-      width: 100%;
-    }
-    @media (max-width: variables.$breakpoint-sm) {
-      width: 100%;
-      padding: 8px;
+      width: 100% !important;
     }
     .social-link {
       width: 20px;
