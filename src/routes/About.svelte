@@ -135,24 +135,6 @@
           }
         }
       }
-
-      // #about-me-link {
-      //   display: flex;
-      //   flex-direction: row;
-      //   width: fit-content !important;
-      //   align-items: center;
-      //   &:hover #about-me-link-icon {
-      //     transition: all 250ms ease;
-      //     transform: translateX(4px);
-      //   }
-      //   &-icon {
-      //     transition: all 250ms ease;
-      //     width: 20px;
-      //     height: 20px;
-      //     background: url("src/assets/images/chevron-right.svg") no-repeat center;
-      //     background-size: contain;
-      //   }
-      // }
     }
   }
 </style>
