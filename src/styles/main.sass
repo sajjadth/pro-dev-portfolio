@@ -120,3 +120,20 @@ body
     opacity: 0.025
     margin: 0
     line-height: 30vh
+    &-lg
+      @media (max-width: $breakpoint-lg)
+        font-size: 25vh !important
+        line-height: 25vh !important
+      @media (max-width: $breakpoint-md)
+        font-size: 19vh !important
+        line-height: 19vh !important
+      @media (max-width: $breakpoint-sm)
+        top: 0 !important
+        bottom: 0 !important
+        transform: rotate(90deg)
+        font-size: 20vh !important
+        line-height: 20vh !important
+        width: 100vh !important
+        display: flex
+        align-items: end
+        justify-content: end
