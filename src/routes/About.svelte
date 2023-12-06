@@ -75,7 +75,7 @@
       bring your ideas to life.
     </p>
   </article>
-  <h1 class="subtle-background-title">About Me.</h1>
+  <h1 class="subtle-background-title subtle-background-title-lg">About Me.</h1>
 </main>
 
 <style lang="scss" scoped>
