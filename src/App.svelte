@@ -4,10 +4,12 @@
   import Header from "./components/Header.svelte";
   import Footer from "./components/Footer.svelte";
   import About from "./routes/About.svelte";
+  import Contact from "./routes/Contact.svelte";
 
   const routes = {
     "/": Home,
     "/about": About,
+    "/contact": Contact
   };
 </script>
 
