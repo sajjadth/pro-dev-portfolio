@@ -1,4 +1,12 @@
-<main class="w-100 h-100 container d-flex align-items-center justify-content-center flex-column">
+<script lang="ts">
+  import { fade } from "svelte/transition";
+</script>
+
+<main
+  in:fade={{ delay: 500 }}
+  out:fade|local
+  class="w-100 h-100 container d-flex align-items-center justify-content-center flex-column"
+>
   <article>
     <h1 id="title-name">I'm <span id="title-name-colored">Sajjad Tahmouresi</span></h1>
 

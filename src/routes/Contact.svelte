@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { fade } from "svelte/transition";
+
   let email = "";
   let name = "";
   let message = "";
@@ -9,7 +11,11 @@
   }
 </script>
 
-<main class="w-100 h-100 container d-flex align-items-center justify-content-start flex-column">
+<main
+in:fade={{delay:500}}
+out:fade|local
+  class="w-100 h-100 container d-flex align-items-center justify-content-start flex-column"
+>
   <article>
     <h1 id="title">Contact.</h1>
     <p class="text-break">
@@ -41,7 +47,7 @@
   @use "src/styles/_variables.sass";
   @use "src/styles/_colors.sass";
 
-  p{
+  p {
     text-wrap: balance;
   }
   main {

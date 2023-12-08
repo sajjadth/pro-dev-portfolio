@@ -1,4 +1,12 @@
-<main class="w-100 h-100 container d-flex align-items-center justify-content-start flex-column">
+<script lang="ts">
+  import { fade } from "svelte/transition";
+</script>
+
+<main
+in:fade={{delay:500}}
+out:fade|local
+  class="w-100 h-100 container d-flex align-items-center justify-content-start flex-column"
+>
   <article>
     <h1 id="title">About Me</h1>
     <p>
