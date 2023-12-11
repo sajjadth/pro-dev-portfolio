@@ -5,11 +5,13 @@
   import Footer from "./components/Footer.svelte";
   import About from "./routes/About.svelte";
   import Contact from "./routes/Contact.svelte";
+  import Projects from "./routes/Projects.svelte";
 
   const routes = {
     "/": Home,
     "/about": About,
-    "/contact": Contact
+    "/contact": Contact,
+    "/projects": Projects,
   };
 </script>
 
