@@ -1,8 +1,15 @@
 <script lang="ts">
-  import { onMount } from "svelte";
   import { fade } from "svelte/transition";
 
   const projects = [
+    {
+      title: "Trivia Quest",
+      description:
+        "Trivia Quest is a full-stack app offering a diverse range of trivia categories, real-time multiplayer challenges, and a responsive design. Test your knowledge, compete globally, and track your progress on leaderboards.",
+      technologies: ["JavaScript", "Go", "TypeScript", "Nuxt", "Vue", "Sass"],
+      github: "https://github.com/sajjadth/trivia-quest",
+      site: "https://sajjadth.github.io/trivia-quest",
+    },
     {
       title: "Persian Calendar",
       description:
@@ -11,16 +18,28 @@
       github: "https://github.com/sajjadth/persian-calendar",
       site: "https://sajjadth.github.io/persian-calendar",
     },
+    {
+      title: "Persian Calendar API",
+      description:
+        "The Persian Calendar API is a Node.js-based API that provides a Persian (Jalali) calendar with holiday events. Easily retrieve calendars for specific years and months, and access holiday data for cultural inclusivity in your applications. The API is user-friendly, easy to set up, and open for community contributions.",
+      technologies: ["JavaScript", "Nodejs"],
+      github: "https://github.com/sajjadth/persian-calendar-api",
+      site: "https://persian-calendar-api.sajjadth.workers.dev",
+    },
+    {
+      title: "Smell Solutions",
+      description:
+        "Smell Solutions is a discreet and thoughtful tool designed to address personal hygiene concerns by facilitating the sending of friendly and anonymous emails. This platform ensures that users can communicate sensitive matters in a confidential and non-confrontational manner.",
+      technologies: ["JavaScript", "React", "Sass"],
+      github: "https://github.com/sajjadth/smell-solutions",
+      site: "https://sajjadth.github.io/smell-solutions",
+    },
   ];
 
-  onMount(() => {
-    const scrollContainer = document.getElementById("horizontal-chip");
-
-    scrollContainer?.addEventListener("wheel", (evt) => {
-      evt.preventDefault();
-      scrollContainer.scrollLeft += evt.deltaY;
-    });
-  });
+  function horizontalScroll(e: any) {
+    e.preventDefault();
+    e.currentTarget.scrollLeft += e.deltaY;
+  }
 </script>
 
 <main
@@ -32,16 +51,16 @@
     <h1 id="title">Projects.</h1>
     <div id="projects" class="h-100">
       {#each projects as { title, description, technologies, github, site }}
-        <div class="card">
-          <div class="card-title">
+        <div class="card d-flex flex-column align-items-center justify-content-between">
+          <div class="card-title d-flex flex-column align-items-start justify-content-center">
             <h2 class="text-break">{title}</h2>
           </div>
           <div class="card-text">
             <p>{description}</p>
           </div>
           <div
-            id="horizontal-chip"
             class="card-interactions d-flex align-items-center justify-content-start"
+            on:wheel={(e) => horizontalScroll(e)}
           >
             {#each technologies as name}
               <div class={`chip ${name.toLowerCase()}`}>{name}</div>
@@ -92,24 +111,27 @@
         width: fit-content;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        @media (max-width: variables.$breakpoint-md) {
+          grid-template-columns: repeat(1, 1fr);
+        }
+
         gap: 16px;
         justify-content: center;
         align-items: center;
-        justify-items: center;
         .card {
           width: 300px;
-          min-height: 300px;
+          min-height: 345px;
           background: red;
           border-radius: 20px;
           background: rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 4px 0 rgb(78, 81, 92, 0.37);
-          backdrop-filter: blur(5px);
+          backdrop-filter: blur(2.5px);
           border: 1px solid rgba(255, 255, 255, 0.18);
           transition: all 250ms ease;
           padding: 8px 24px;
           &:hover {
             transition: all 250ms ease;
-            backdrop-filter: blur(7.5px);
+            backdrop-filter: blur(10px);
             box-shadow: 0 0 16px 0 rgb(78, 81, 92, 0.37);
           }
           &-title {
@@ -180,6 +202,18 @@
             }
             .nodejs {
               background: rgb(60, 135, 58, 0.25);
+            }
+            .typescript {
+              background: rgb(0, 122, 204, 0.25);
+            }
+            .vue {
+              background: rgb(66, 184, 131, 0.25);
+            }
+            .nuxt {
+              background: rgb(53, 73, 94, 0.25);
+            }
+            .go {
+              background: rgb(1, 125, 157, 0.25);
             }
           }
           &-external-links {
