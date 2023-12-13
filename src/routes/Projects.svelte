@@ -69,8 +69,8 @@
           <div
             class="card-external-links w-100 d-flex flex-row align-items-center justify-content-end"
           >
-            <a class="github not-link" href={github} target="_blank" />
-            <a class="external-link not-link" href={site} target="_blank" />
+            <a class="github not-link" href={github} target="_blank" aria-label="GitHub" />
+            <a class="external-link not-link" href={site} target="_blank" aria-label="Site" />
           </div>
         </div>
       {/each}
