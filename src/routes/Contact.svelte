@@ -180,7 +180,7 @@
           width: 160px;
           background: colors.$primary-color;
           border: none;
-          color: colors.$background-color;
+          color: colors.$background-color !important;
           border-radius: 8px;
           padding: 10px 20px;
           margin-block: 8px;
