@@ -52,19 +52,19 @@
       }
     }
     #github {
-      background: url("src/assets/images/github.svg");
+      background: url("src/images/github.svg");
     }
     #linkedin {
-      background: url("src/assets/images/linkedin.svg");
+      background: url("src/images/linkedin.svg");
     }
     #twitter {
-      background: url("src/assets/images/twitter.svg");
+      background: url("src/images/twitter.svg");
     }
     #twitch {
-      background: url("src/assets/images/twitch.svg");
+      background: url("src/images/twitch.svg");
     }
     #bmc {
-      background: url("src/assets/images/bmc.svg");
+      background: url("src/images/bmc.svg");
       background-size: auto 100%;
     }
   }
