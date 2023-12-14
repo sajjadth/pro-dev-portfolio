@@ -73,7 +73,7 @@
       #navbar-icon {
         width: 30px;
         height: 30px;
-        background: url("src/static/images/stacks.svg") center no-repeat;
+        background: url("/images/stacks.svg") center no-repeat;
         background-size: cover;
         transition: all 250ms ease;
         fill: green !important;

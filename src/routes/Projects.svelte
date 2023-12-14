@@ -222,7 +222,7 @@
             margin-block: 8px;
 
             .external-link {
-              background: url("src/images/external-link.svg") no-repeat center;
+              background: url("/images/external-link.svg") no-repeat center;
               background-size: cover;
               width: 20px;
               height: 20px;
@@ -238,7 +238,7 @@
               }
             }
             .github {
-              background: url("src/images/github.svg") no-repeat center;
+              background: url("/images/github.svg") no-repeat center;
               background-size: cover;
               width: 20px;
               height: 20px;
