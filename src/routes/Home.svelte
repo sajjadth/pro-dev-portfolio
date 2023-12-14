@@ -78,7 +78,7 @@
           transition: all 250ms ease;
           width: 20px;
           height: 20px;
-          background: url("src/images/chevron-right.svg") no-repeat center;
+          background: url("src/static/images/chevron-right.svg") no-repeat center;
           background-size: contain;
         }
       }
