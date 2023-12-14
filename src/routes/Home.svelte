@@ -50,6 +50,7 @@
       @media (max-width: variables.$breakpoint-sm) {
         width: 100%;
         padding: 8px;
+        text-align: left;
       }
       #title-name {
         margin-bottom: 32px;
