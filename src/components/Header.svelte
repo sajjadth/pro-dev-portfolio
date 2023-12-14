@@ -11,7 +11,8 @@
 
 <header class="container">
   <nav class="w-100 d-flex flex-row align-items-center justify-content-start">
-    <a href="/#" class="not-link">
+    <!-- svelte-ignore a11y-invalid-attribute -->
+    <a href="#" class="not-link" aria-label="Home">
       <div id="navbar-icon" />
     </a>
     <div
