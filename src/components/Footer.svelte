@@ -8,8 +8,7 @@
     target="_blank"
   >
   </a>
-  <a class="not-link social-link" id="twitter" href="https://twitter.com/sajjaadth" target="_blank">
-  </a>
+  <a class="not-link social-link" id="x" href="https://twitter.com/sajjaadth" target="_blank"> </a>
   <a class="not-link social-link" id="twitch" href="https://twitch.com/SonTheWitch" target="_blank">
   </a>
   <a
@@ -57,8 +56,8 @@
     #linkedin {
       background: url("/images/linkedin.svg");
     }
-    #twitter {
-      background: url("/images/twitter.svg");
+    #x {
+      background: url("/images/x.svg");
     }
     #twitch {
       background: url("/images/twitch.svg");
